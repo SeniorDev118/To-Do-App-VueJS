@@ -16,23 +16,23 @@ export default {
       todos: [{
         title: 'Todo A',
         project: 'Project A',
-        done: false,
+        done: false
       }, {
         title: 'Todo B',
         project: 'Project B',
-        done: true,
+        done: true
       }, {
         title: 'Todo C',
         project: 'Project C',
-        done: false,
+        done: false
       }, {
         title: 'Todo D',
         project: 'Project D',
-        done: false,
-      }],
-    };
-  },
-};
+        done: false
+      }]
+    }
+  }
+}
 </script>
 
 <style>
