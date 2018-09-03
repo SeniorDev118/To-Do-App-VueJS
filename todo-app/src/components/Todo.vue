@@ -9,8 +9,11 @@
         </div>
         <div class='extra content'>
             <span class='right floated edit icon'>
-            <i class='edit icon'></i>
-          </span>
+                <i class='edit icon'></i>
+            </span>
+            <span class='right floated trash icon' v-on:click="deleteTodo(todo)">
+                <i class='trash icon'></i>
+            </span>
         </div>
     </div>
 
@@ -55,6 +58,12 @@
         },
         hideForm() {
             this.isEditing = false;
+        },
+        deleteTodo(todo) {
+            this.$emit('delete-todo', todo);
+        },
+        completeTodo(todo) {
+            this.$emit('complete-todo', todo);
         }
     }
   };
