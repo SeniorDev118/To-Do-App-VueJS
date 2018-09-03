@@ -41,6 +41,7 @@
     <div class='ui bottom attached red basic button' v-show="!todo.done">
         Complete
     </div>
+    <todo v-on:delete-todo="deleteTodo" v-on:complete-todo="completeTodo" v-for="todo in todos" :todo.sync="todo"></todo>
 </div>
 </template>
 

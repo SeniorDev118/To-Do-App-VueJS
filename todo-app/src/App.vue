@@ -15,7 +15,7 @@ export default {
     TodoList,
     CreateTodo
   },
-  data() {
+  data () {
     return {
       todos: [{
         title: 'Todo A',
@@ -37,7 +37,7 @@ export default {
     }
   },
   methods: {
-    addTodo(title) {
+    addTodo (title) {
       this.todos.push({
         title,
         done: false,
